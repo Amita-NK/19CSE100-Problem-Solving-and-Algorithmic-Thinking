@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Amita Narayanan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:18:31 AM"/>
+        <attribute name="created" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIyLTEwLTI4OzA5OjI0OjQ2IEFNOzM3NTA="/>
+        <attribute name="edited" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIyLTEwLTI4OzEwOjE4OjMxIEFNOzI7Mzg0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RollNumber" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your Roll Number&quot;" newline="True"/>
+            <comment text="Get student Roll Number"/>
+            <input variable="RollNumber"/>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="Address" type="String" array="False" size=""/>
+            <declare name="BloodGroup" type="String" array="False" size=""/>
+            <declare name="PhoneNumber" type="Integer" array="False" size=""/>
+            <declare name="DepartmentAssigned" type="String" array="False" size=""/>
+            <declare name="HostelRoomNumber" type="String" array="False" size=""/>
+            <declare name="Semester" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your Semester&quot;" newline="True"/>
+            <comment text="Get Semester"/>
+            <input variable="Semester"/>
+            <declare name="SubjectCode" type="String" array="False" size=""/>
+            <output expression="&quot;Enter the subject code&quot;" newline="True"/>
+            <comment text="Get Subject Code"/>
+            <input variable="SubjectCode"/>
+            <declare name="MarksOfP1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your P1 Marks&quot;" newline="True"/>
+            <comment text="Get Marks of P1"/>
+            <input variable="MarksOfP1"/>
+            <declare name="MarksOfP2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Marks Of P2&quot;" newline="True"/>
+            <comment text="Get Marks of P2"/>
+            <input variable="MarksOfP2"/>
+            <declare name="TotalMarks" type="Integer" array="False" size=""/>
+            <assign variable="TotalMarks" expression="MarksofP1+MarksofP2"/>
+            <output expression="&quot;Total is&quot;" newline="True"/>
+            <output expression="TotalMarks" newline="True"/>
+            <declare name="AverageMarks" type="Integer" array="False" size=""/>
+            <assign variable="AverageMarks" expression="(MarksofP1+MarksofP2)/2"/>
+            <output expression="&quot;Average is &quot;&amp; AverageMarks" newline="True"/>
+            <output expression="AverageMarks" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
