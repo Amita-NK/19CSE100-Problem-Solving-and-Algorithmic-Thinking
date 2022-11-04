@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22067"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:38:21 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTExLTA0OzEwOjA5OjEwIEFNOzMwNTE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTExLTA0OzExOjM4OjIxIEFNOzU7MzE2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="divident, divisor" type="Integer" array="False" size=""/>
+            <comment text="Entering the value for Divident"/>
+            <output expression="&quot;Enter the value for divident&quot;" newline="True"/>
+            <input variable="divident"/>
+            <comment text="Entering the value for divisor "/>
+            <output expression="&quot;Enter the value for divisor&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <comment text="Finding the quotient"/>
+            <declare name="Modulus" type="Integer" array="False" size=""/>
+            <comment text="Finding the modulus"/>
+            <assign variable="modulus" expression="divident%divisor"/>
+            <output expression="&quot;The modulus value of the given equation is&quot;" newline="True"/>
+            <output expression="modulus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

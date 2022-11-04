@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22067"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:51:38 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTExLTA0OzA5OjMyOjU5IEFNOzMwNjg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTExLTA0OzEwOjUxOjM4IEFNOzQ7MzE2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="To find the roots of a quadratic equation"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <comment text="Entering the value for the coefficient of x^2"/>
+            <output expression="&quot;Enter value for the coefficient of x^2&quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <comment text="Entering the value for coefficient of x"/>
+            <output expression="&quot;Enter value for the coefficient of x&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <comment text="Entering the value for the constant"/>
+            <output expression="&quot;Enter value for the constant&quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="R1, R2" type="Integer" array="False" size=""/>
+            <comment text="Finding the value for the first root of the quadratic equation "/>
+            <assign variable="R1" expression="(-b+sqrt(b^2-4*a*c))/2*a"/>
+            <comment text="Finding the value for the second root of the quadratic equation "/>
+            <assign variable="R2" expression="(-b-sqrt(b^2-4*a*c))/2*a"/>
+            <output expression="&quot;The value for the first root of the quadratic equation is&quot;" newline="True"/>
+            <output expression="R1" newline="True"/>
+            <output expression="&quot;The value for the second root of the quadratic equation is&quot;" newline="True"/>
+            <output expression="R2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
