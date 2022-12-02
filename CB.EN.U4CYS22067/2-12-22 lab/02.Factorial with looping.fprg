@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22067"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:27:55 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzA5OjUwOjI0IEFNOzMzMTU="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzEwOjI3OjU1IEFNOzI7MzQyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <comment text="Finding the factorial of numbers from 1 to 10"/>
+            <assign variable="n" expression="1"/>
+            <output expression="&quot;Factorial of numbers from 1 to 10&quot;" newline="True"/>
+            <output expression="&quot;Factorial of number 1&quot;" newline="True"/>
+            <for variable="n" start="1" end="1" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Factorial of number 2&quot;" newline="True"/>
+            <for variable="n" start="2" end="2" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Factorial of number 3&quot;" newline="True"/>
+            <for variable="n" start="3" end="3" direction="inc" step="1">
+                <assign variable="n" expression="3*2*1"/>
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Factorial of number 4&quot;" newline="True"/>
+            <for variable="n" start="4" end="4" direction="inc" step="1">
+                <assign variable="n" expression="4*3*2*1"/>
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Factorial of number 5&quot;" newline="True"/>
+            <for variable="n" start="5" end="5" direction="inc" step="1">
+                <assign variable="n" expression="5*4*3*2*1"/>
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Factorial of number 6&quot;" newline="True"/>
+            <for variable="n" start="6" end="6" direction="inc" step="1">
+                <assign variable="n" expression="6*5*4*3*2*1"/>
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Factorial of number 7&quot;" newline="True"/>
+            <for variable="n" start="7" end="7" direction="inc" step="1">
+                <assign variable="n" expression="7*6*5*4*3*2*1"/>
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Factorial of number 8&quot;" newline="True"/>
+            <for variable="n" start="8" end="8" direction="inc" step="1">
+                <assign variable="n" expression="8*7*6*5*4*3*2*1"/>
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Factorial of number 9&quot;" newline="True"/>
+            <for variable="n" start="9" end="9" direction="inc" step="1">
+                <assign variable="n" expression="9*8*7*6*5*4*3*2*1"/>
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Factorial of number 10&quot;" newline="True"/>
+            <for variable="n" start="10" end="10" direction="inc" step="1">
+                <assign variable="n" expression="10*9*8*7*6*5*4*3*2*1"/>
+                <output expression="n" newline="True"/>
+            </for>
+            <comment text="Ending the program"/>
+        </body>
+    </function>
+</flowgorithm>

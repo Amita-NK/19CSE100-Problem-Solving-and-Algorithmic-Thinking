@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22067"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:24:36 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzA5OjI3OjA0IEFNOzMzMTc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzEwOjIzOjQ1IEFNOzE7Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzA5OjA2OjMwIEFNO0FkZGl0aW9uIHRhYmxlLmZwcmc7ODY5MA=="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzEwOjI0OjM2IEFNOzM7MzQyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <comment text="Multiplication table of numbers from 1 to 10"/>
+            <output expression="&quot;Multiplication of numbers&quot;" newline="True"/>
+            <output expression="&quot;Multiplication table of 1&quot;" newline="True"/>
+            <for variable="n" start="1" end="10" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Multiplication table of 2&quot;" newline="True"/>
+            <for variable="n" start="2" end="20" direction="inc" step="2">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="3"/>
+            <output expression="&quot;Multiplication table of 3&quot;" newline="True"/>
+            <for variable="n" start="3" end="30" direction="inc" step="3">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="4"/>
+            <output expression="&quot;Multiplication table of 4&quot;" newline="True"/>
+            <for variable="n" start="4" end="40" direction="inc" step="4">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Multiplication table of 5&quot;" newline="True"/>
+            <assign variable="n" expression="5"/>
+            <for variable="n" start="5" end="50" direction="inc" step="5">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Multiplication table of 6&quot;" newline="True"/>
+            <assign variable="n" expression="6"/>
+            <for variable="n" start="6" end="60" direction="inc" step="6">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Multiplication table of 7&quot;" newline="True"/>
+            <assign variable="n" expression="7"/>
+            <for variable="n" start="7" end="70" direction="inc" step="7">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Multiplication table of 8&quot;" newline="True"/>
+            <assign variable="n" expression="8"/>
+            <for variable="n" start="8" end="80" direction="inc" step="8">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Multiplication table of 9&quot;" newline="True"/>
+            <assign variable="n" expression="9"/>
+            <for variable="n" start="9" end="90" direction="inc" step="9">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;Multiplication table of 10&quot;" newline="True"/>
+            <assign variable="n" expression="10"/>
+            <for variable="n" start="10" end="100" direction="inc" step="10">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;The above given is the multiplication table for numbers from 1 to 10&quot;" newline="True"/>
+            <comment text="Ending the program"/>
+        </body>
+    </function>
+</flowgorithm>

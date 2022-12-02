@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22067"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:23:36 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzA5OjA2OjMwIEFNOzMzMTM="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzEwOjIzOjM2IEFNOzI7MzQxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <comment text="Finding addition table for numbers from 1 to 10"/>
+            <output expression="&quot;Addition table for 1 is&quot;" newline="True"/>
+            <output expression="&quot;n+1&quot;" newline="True"/>
+            <for variable="n" start="1" end="10" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="2"/>
+            <output expression="&quot;Addition table for 2 is&quot;" newline="True"/>
+            <for variable="n" start="3" end="12" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="3"/>
+            <output expression="&quot;Addition table for 3 is&quot;" newline="True"/>
+            <for variable="n" start="4" end="13" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="4"/>
+            <output expression="&quot;Addition table for 4 is&quot;" newline="True"/>
+            <for variable="n" start="5" end="14" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="5"/>
+            <output expression="&quot;Addition table for 5 is&quot;" newline="True"/>
+            <for variable="n" start="6" end="15" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="6"/>
+            <output expression="&quot;Addition table for 6 is&quot;" newline="True"/>
+            <for variable="n" start="7" end="16" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="7"/>
+            <output expression="&quot;Addition table for 7 is&quot;" newline="True"/>
+            <for variable="n" start="8" end="17" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="8"/>
+            <output expression="&quot;Addition table for 8 is&quot;" newline="True"/>
+            <for variable="n" start="9" end="18" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="9"/>
+            <output expression="&quot;Addition table for 9 is&quot;" newline="True"/>
+            <for variable="n" start="10" end="19" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <assign variable="n" expression="10"/>
+            <output expression="&quot;Addition table for 10 is&quot;" newline="True"/>
+            <for variable="n" start="11" end="20" direction="inc" step="1">
+                <output expression="n" newline="True"/>
+            </for>
+            <output expression="&quot;The above given is the addition table for numbers from 1 to 10&quot;" newline="True"/>
+            <comment text="Ending the program"/>
+        </body>
+    </function>
+</flowgorithm>

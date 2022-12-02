@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22067"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:26:26 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzA5OjI3OjA0IEFNOzMzMTc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTEyLTAyOzEwOjI2OjI2IEFNOzI7MzQyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <comment text="Finding the consequent numbers by adding 1 to the initial number "/>
+            <assign variable="n" expression="1"/>
+            <output expression="&quot;Addition of numbers&quot;" newline="True"/>
+            <while expression="n&lt;=10">
+                <assign variable="n" expression="n+1"/>
+                <output expression="n" newline="True"/>
+            </while>
+            <comment text="Ending the program"/>
+        </body>
+    </function>
+</flowgorithm>
