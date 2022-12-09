@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="S.RAMESH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:04:23 PM"/>
+        <attribute name="created" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjItMTItMDk7MTA6MjM6MjYgQU07Mjg5OA=="/>
+        <attribute name="edited" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjItMTItMDk7MTA6MzQ6NDQgQU07MTtQQVZBTjtDVVNDVVRBOzIwMjItMTItMDk7MDk6MjM6NDEgQU07bnN0dWRlbnRzIG1hcmtzIHN5c3RlbS5mcHJnOzgwNjI="/>
+        <attribute name="edited" value="Uy5SQU1FU0g7REVTS1RPUC1ISlBPMTBLOzIwMjItMTItMDk7MTA6NDM6MTYgQU07MjszMDA4"/>
+        <attribute name="edited" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIyLTEyLTA5OzExOjA0OjIzIFBNOzI7Mzg2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring variables"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please Enter the number of students to be evaluated&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="Declaring arrays"/>
+            <declare name="markofsub1" type="Integer" array="True" size="n"/>
+            <declare name="markofsub2" type="Integer" array="True" size="n"/>
+            <declare name="markofsub3" type="Integer" array="True" size="n"/>
+            <declare name="markofsub4" type="Integer" array="True" size="n"/>
+            <declare name="markofsub5" type="Integer" array="True" size="n"/>
+            <declare name="average" type="Real" array="True" size="n"/>
+            <declare name="total" type="Integer" array="True" size="n"/>
+            <declare name="rollnumber" type="Integer" array="True" size="n"/>
+            <comment text="Entering the required information for computation"/>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;enter the value of markofsub1 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="markofsub1[index]"/>
+                <output expression="&quot;enter the value of markofsub2 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="markofsub2[index]"/>
+                <output expression="&quot;enter the value of markofsub3 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="markofsub3[index]"/>
+                <output expression="&quot;enter the value of markofsub4 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="markofsub4[index]"/>
+                <output expression="&quot;enter the value of markofsub5 of student&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="markofsub5[index]"/>
+                <output expression="&quot;enter the roll number&quot;&amp;index+1&amp;&quot;&quot;" newline="True"/>
+                <input variable="rollnumber[index]"/>
+            </for>
+            <comment text="Calculating total and average"/>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="total[index]" expression="markofsub1[Index]+markofsub2[Index]+markofsub3[Index]+markofsub4[Index]+markofsub5[Index]"/>
+                <assign variable="average[index]" expression="total[index]/5"/>
+            </for>
+            <comment text="Displaying all the information within a specified sequence"/>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Rollno:&quot;&amp;rollnumber[Index]&amp;&quot;&quot;" newline="True"/>
+                <output expression="&quot;MARKS: &quot;" newline="False"/>
+                <output expression="&quot;&quot;&amp;markofsub1[Index]&amp;&quot; ,&quot;" newline="False"/>
+                <output expression="&quot;&quot;&amp;markofsub2[Index]&amp;&quot; ,&quot;" newline="False"/>
+                <output expression="&quot;&quot;&amp;markofsub3[Index]&amp;&quot; ,&quot;" newline="False"/>
+                <output expression="&quot;&quot;&amp;markofsub4[Index]&amp;&quot; ,&quot;" newline="False"/>
+                <output expression="markofsub5[Index]" newline="True"/>
+                <output expression="&quot;total:&quot;&amp;total[Index]&amp;&quot;&quot;" newline="True"/>
+                <output expression="&quot;average:&quot;&amp;average[Index]&amp;&quot;&quot;" newline="True"/>
+            </for>
+            <comment text="Ending the program"/>
+        </body>
+    </function>
+</flowgorithm>

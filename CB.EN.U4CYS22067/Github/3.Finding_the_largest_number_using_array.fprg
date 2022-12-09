@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Amita Narayanan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:32:45 PM"/>
+        <attribute name="created" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIyLTEyLTA5OzExOjIzOjMyIFBNOzM3NTM="/>
+        <attribute name="edited" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIyLTEyLTA5OzExOjMyOjQ1IFBNOzE7Mzg2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the variables"/>
+            <declare name="index, number, maximum" type="Integer" array="False" size=""/>
+            <comment text="Asking for the number of arrays"/>
+            <output expression="&quot;Enter the number of arrays&quot;" newline="True"/>
+            <input variable="number"/>
+            <comment text="Declaring array"/>
+            <declare name="Largestnumber" type="Integer" array="True" size="number"/>
+            <comment text="Creating array"/>
+            <for variable="index" start="0" end="number-1" direction="inc" step="1">
+                <input variable="largestnumber[index]"/>
+            </for>
+            <assign variable="maximum" expression="largestnumber[0]"/>
+            <comment text="Establishing condition"/>
+            <for variable="index" start="1" end="number-1" direction="inc" step="1">
+                <if expression="maximum&lt;largestnumber[index]">
+                    <then>
+                        <assign variable="maximum" expression="largestnumber[index]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <comment text="Displaying the output"/>
+            <output expression="&quot;The largest number is&quot; &amp;maximum" newline="True"/>
+            <comment text="Ending the program"/>
+        </body>
+    </function>
+</flowgorithm>

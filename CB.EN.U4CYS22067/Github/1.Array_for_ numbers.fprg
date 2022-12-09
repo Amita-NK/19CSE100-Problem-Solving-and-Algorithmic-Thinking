@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Amita Narayanan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:02:01 PM"/>
+        <attribute name="created" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIyLTEyLTA2OzAyOjM2OjQ4IFBNOzM3NjE="/>
+        <attribute name="edited" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIyLTEyLTA5OzExOjAyOjAxIFBNOzc7Mzg2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring variables"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <comment text="Creating an array"/>
+            <declare name="values" type="Integer" array="True" size="10"/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <comment text="Entering the required values"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter your required values for index=[&quot;&amp; index &amp;&quot;]&quot;" newline="True"/>
+                <input variable="value"/>
+                <assign variable="values[index]" expression="value"/>
+            </for>
+            <output expression="&quot;Array contents&quot;" newline="True"/>
+            <comment text="Displaying the array contents"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Array content values[&quot;&amp; index &amp;&quot;]=&quot;&amp;values[index]" newline="True"/>
+            </for>
+            <comment text="Ending the program"/>
+        </body>
+    </function>
+</flowgorithm>
