@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22067"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 11:03:43 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIzLTAxLTIwOzA5OjA1OjQ5IEFNOzMzMjE="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIzLTAxLTIwOzExOjAzOjQzIEFNOzQ7MzQxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the variables"/>
+            <declare name="n, j" type="Integer" array="False" size=""/>
+            <comment text="Taking the values from the user "/>
+            <output expression="&quot;Enter the the number of elements&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="Creating an array"/>
+            <declare name="e" type="Integer" array="True" size="n"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the value of element &quot;  &amp; i &amp;  &quot; for which sorting should be done&quot;" newline="True"/>
+                <input variable="e[i]"/>
+            </for>
+            <comment text="Starting the process of sorting"/>
+            <declare name="minval" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="minval" expression="e[i]"/>
+                <for variable="j" start="i" end="n-1" direction="inc" step="1">
+                    <comment text="Condition applied for finding the minimum value"/>
+                    <if expression="e[j]&lt;minval">
+                        <then>
+                            <assign variable="minval" expression="e[j]"/>
+                            <assign variable="e[j]" expression="e[i]"/>
+                            <assign variable="e[i]" expression="minval"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <comment text="Iteration proceeds"/>
+            <comment text="Sorting out the elements"/>
+            <output expression="&quot;The sorted elements are as follows&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="e[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
