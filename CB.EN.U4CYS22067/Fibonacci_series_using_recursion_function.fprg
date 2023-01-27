@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Amita Narayanan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 06:29:47 PM"/>
+        <attribute name="created" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIzLTAxLTI3OzA2OjE4OjAwIFBNOzM3NTU="/>
+        <attribute name="edited" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIzLTAxLTI3OzA2OjI5OjQ3IFBNOzE7Mzg3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the variables"/>
+            <declare name="i, j, n" type="Integer" array="False" size=""/>
+            <comment text="Asking the user for output"/>
+            <output expression="&quot;Enter the number of elements for which fibonacci series should be found&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="Assigning the values"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="j" expression="1"/>
+            <comment text="Calling the functions "/>
+            <call expression="fibonacci(i,j,n)"/>
+        </body>
+    </function>
+    <function name="fibonacci" type="None" variable="">
+        <parameters>
+            <parameter name="i" type="Integer" array="False"/>
+            <parameter name="j" type="Integer" array="False"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <comment text="Declaring variable"/>
+            <declare name="temp" type="Integer" array="False" size=""/>
+            <if expression="n&gt;0">
+                <then>
+                    <comment text="Condition applied"/>
+                    <output expression="i" newline="True"/>
+                    <assign variable="temp" expression="i"/>
+                    <assign variable="i" expression="j"/>
+                    <assign variable="j" expression="j+temp"/>
+                    <assign variable="n" expression="n-1"/>
+                    <call expression="fibonacci(i,j,n)"/>
+                    <comment text="End"/>
+                </then>
+                <else>
+                    <output expression="&quot;Over&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Amita Narayanan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 06:43:48 PM"/>
+        <attribute name="created" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIzLTAxLTI3OzA2OjM3OjQ3IFBNOzM3Njc="/>
+        <attribute name="edited" value="QW1pdGEgTmFyYXlhbmFuO0RFU0tUT1AtQU5ISjg1NTsyMDIzLTAxLTI3OzA2OjQzOjQ4IFBNOzE7Mzg3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaration of variables"/>
+            <declare name="n, fact" type="Integer" array="False" size=""/>
+            <comment text="Asking the user for essential information"/>
+            <output expression="&quot;Input the number for which you need the factorial for&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="The function is called"/>
+            <assign variable="fact" expression="factorial(n)"/>
+            <output expression="&quot;The factorial value for the number given is&quot;" newline="True"/>
+            <comment text="Output is given"/>
+            <output expression="fact" newline="True"/>
+        </body>
+    </function>
+    <function name="factorial" type="Integer" variable="fact1">
+        <parameters>
+            <parameter name="n1" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <comment text="Declaring the variables"/>
+            <declare name="fact1" type="Integer" array="False" size=""/>
+            <comment text="If condition applied"/>
+            <if expression="n1==1">
+                <then>
+                    <comment text="Assigning the value for fact 1"/>
+                    <assign variable="fact1" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="fact1" expression="factorial(n1-1)*n1"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
