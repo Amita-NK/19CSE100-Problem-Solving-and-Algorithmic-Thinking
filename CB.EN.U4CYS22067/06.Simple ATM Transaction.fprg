@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22067"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 09:44:31 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTExLTE4OzA4OjU2OjMyIEFNOzMwNjk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NzsyMDIyMjNNQVlDMDEwNDsyMDIyLTExLTE4OzA5OjQ0OjMxIEFNOzI7MzE3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="Accountnumber" type="Integer" array="False" size=""/>
+            <declare name="amounttowithdraw, balance, pin" type="Real" array="False" size=""/>
+            <comment text="Enquiring about the name."/>
+            <output expression="&quot;Please enter your name&quot;" newline="True"/>
+            <input variable="name"/>
+            <comment text="Enquiring about the account number."/>
+            <output expression="&quot;Please enter your Account number&quot;" newline="True"/>
+            <input variable="Accountnumber"/>
+            <comment text="Enquiring about the amount the user wants to withdraw."/>
+            <output expression="&quot;Please enter the amount you want to withdraw&quot;" newline="True"/>
+            <input variable="amounttowithdraw"/>
+            <comment text="Enquiring about the bank balance"/>
+            <output expression="&quot;Please enter your bank balance&quot;" newline="True"/>
+            <input variable="balance"/>
+            <comment text="Checking whether the conditions satisfy."/>
+            <if expression="balance&gt;500">
+                <then>
+                    <output expression="&quot;You have sufficient balance in your account to withdraw.Proceeding to the next step&quot;" newline="True"/>
+                    <output expression="&quot;Please enter your secret pin&quot;" newline="True"/>
+                    <comment text="Asking the user to enter their secret pin."/>
+                    <input variable="pin"/>
+                    <if expression="pin==2181">
+                        <then>
+                            <output expression="&quot;Please wait.....&quot;" newline="True"/>
+                            <output expression="&quot;Transaction complete&quot;" newline="True"/>
+                            <output expression="&quot;Please don't forget to take your card&quot;" newline="True"/>
+                            <output expression="&quot;Thank you&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Incorrect pin entered&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;An error occured.This may be due to insuffiecient balance in account&quot;" newline="True"/>
+                    <output expression="&quot;Please deposit cash in order to avoid penalties at the end of the month&quot;" newline="True"/>
+                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
